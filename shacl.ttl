@@ -656,7 +656,7 @@ _:MediaObjectShape
             sh:pattern "^https?://" ;
             sh:description """
                 A REQUIRED property that points to the URI of a license or rights statement
-                under which the digital reproduction may be used.
+                that applies to the digital reproduction.
                 This concerns the use of the reproduction, not of the heritage object itself.
                 The value *MUST* be the canonical URI of the license or rights statement.
                 For example, use https://creativecommons.org/licenses/by/4.0/ instead
@@ -667,7 +667,7 @@ _:MediaObjectShape
                 Media that cannot be openly licensed, for example because it is in copyright,
                 *SHOULD* have one of the [rightsstatements.org](https://rightsstatements.org) URIs instead.
                 Even then, consumers may display the media by embedding its contentUrl and thumbnailUrl;
-                copying it is reserved.
+                any further use is subject to the rights statement.
             """ ;
             rdfs:seeAlso [
                 rdfs:label "CC0 “No Rights Reserved” license on an ImageObject:" ;
