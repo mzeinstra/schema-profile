@@ -686,7 +686,7 @@ _:MediaObjectShape
             sh:severity sh:Warning ;
             sh:description """
                 Points to the URL of the media object, *REQUIRED* if the MediaObject is published under an open license.
-                The URL *MUST* allow embedding (hotlinking), which is how consumers display media that is not openly licensed.
+                The URL *MUST* allow embedding, which is how consumers display media that is not openly licensed.
 
                 For ImageObjects, this *SHOULD* be a high-resolution image to be used in full-screen viewers etc.
             """ ;
@@ -703,6 +703,7 @@ _:MediaObjectShape
             sh:severity sh:Warning ;
             sh:description """
                 Points to a smaller version of the MediaObject, *REQUIRED* if the MediaObject is published under an open license.
+                The URL *MUST* allow embedding.
 
                 For ImageObjects, this *SHOULD* be a small image to be used in lists, search results etc.
             """ ;
