@@ -666,6 +666,8 @@ _:MediaObjectShape
                 for example one of the [Creative Commons](https://creativecommons.org/choose/) licenses.
                 Media that cannot be openly licensed, for example because it is in copyright,
                 *SHOULD* have one of the [rightsstatements.org](https://rightsstatements.org) URIs instead.
+                Even then, consumers may display the media by embedding its contentUrl and thumbnailUrl;
+                copying it is reserved.
             """ ;
             rdfs:seeAlso [
                 rdfs:label "CC0 “No Rights Reserved” license on an ImageObject:" ;
@@ -684,6 +686,7 @@ _:MediaObjectShape
             sh:severity sh:Warning ;
             sh:description """
                 Points to the URL of the media object, *REQUIRED* if the MediaObject is published under an open license.
+                The URL *MUST* allow embedding (hotlinking), which is how consumers display media that is not openly licensed.
 
                 For ImageObjects, this *SHOULD* be a high-resolution image to be used in full-screen viewers etc.
             """ ;
