@@ -665,8 +665,7 @@ _:MediaObjectShape
                 The value *SHOULD* be an open license that allows the media to be consumed,
                 for example one of the [Creative Commons](https://creativecommons.org/choose/) licenses.
                 Media that cannot be openly licensed, for example because it is in copyright,
-                *SHOULD* have one of the [RightsStatements.org](https://rightsstatements.org)
-                rights statements instead, such as http://rightsstatements.org/vocab/InC/1.0/ (In Copyright).
+                *SHOULD* have one of the [rightsstatements.org](https://rightsstatements.org) URIs instead.
             """ ;
             rdfs:seeAlso [
                 rdfs:label "CC0 “No Rights Reserved” license on an ImageObject:" ;
