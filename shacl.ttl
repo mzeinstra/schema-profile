@@ -667,7 +667,7 @@ _:MediaObjectShape
                 Media that cannot be openly licensed, for example because it is in copyright,
                 *SHOULD* have one of the [rightsstatements.org](https://rightsstatements.org) URIs instead.
                 Even then, consumers may display the media by embedding its contentUrl and thumbnailUrl;
-                any further use is subject to the rights statement.
+                for any further use, consult the rights statement.
             """ ;
             rdfs:seeAlso [
                 rdfs:label "CC0 “No Rights Reserved” license on an ImageObject:" ;
