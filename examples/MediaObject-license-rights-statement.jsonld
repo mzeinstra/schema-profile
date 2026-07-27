@@ -1,0 +1,7 @@
+{
+  "@context": "https://schema.org",
+  "@type": ["MediaObject", "ImageObject"],
+  "license": "http://rightsstatements.org/vocab/InC/1.0/",
+  "contentUrl": "https://example.com/images/painting.jpg",
+  "thumbnailUrl": "https://example.com/images/painting-thumbnail.jpg"
+}

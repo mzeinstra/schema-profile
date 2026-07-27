@@ -655,18 +655,26 @@ _:MediaObjectShape
             sh:minCount 1 ;
             sh:pattern "^https?://" ;
             sh:description """
-                A REQUIRED property that points to the URI for a license under which the digital reproduction may be used.
+                A REQUIRED property that points to the URI of a license or rights statement
+                under which the digital reproduction may be used.
                 This concerns the use of the reproduction, not of the heritage object itself.
-                The value *MUST* be the canonical URI of a license.
+                The value *MUST* be the canonical URI of the license or rights statement.
                 For example, use https://creativecommons.org/licenses/by/4.0/ instead
                 of http://creativecommons.org/licenses/by/4.0/deed.nl.
 
-                The value *SHOULD* either be an open license that allows the media to be consumed or a Rights Statement from rightsstatements.org,
+                The value *SHOULD* be an open license that allows the media to be consumed,
                 for example one of the [Creative Commons](https://creativecommons.org/choose/) licenses.
+                Media that cannot be openly licensed, for example because it is in copyright,
+                *SHOULD* have one of the [RightsStatements.org](https://rightsstatements.org)
+                rights statements instead, such as http://rightsstatements.org/vocab/InC/1.0/ (In Copyright).
             """ ;
             rdfs:seeAlso [
                 rdfs:label "CC0 “No Rights Reserved” license on an ImageObject:" ;
                 rdfs:comment "file://examples/MediaObject-license.jsonld" ;
+            ] ,
+            [
+                rdfs:label "An in-copyright image that consumers may view but not reuse:" ;
+                rdfs:comment "file://examples/MediaObject-license-rights-statement.jsonld" ;
             ]
         ] ,
         [
